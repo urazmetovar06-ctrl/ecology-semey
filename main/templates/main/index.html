@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Экологические проблемы города Семей и способы бережного отношения к природе.">
+    <title>Экология города Семей</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: Arial, sans-serif; background: #f3f7f1; color: #183b2a; }
+        header {
+            padding: 24px 8%;
+            display: flex; justify-content: space-between;
+            align-items: center; background: white;
+        }
+        .logo { font-size: 23px; font-weight: bold; color: #247747; }
+        nav a { color: #183b2a; text-decoration: none; margin-left: 25px; }
+        nav a:hover, nav a:focus-visible { color: #247747; text-decoration: underline; }
+        .hero {
+            min-height: 570px; display: flex; align-items: center;
+            padding: 70px 9%; color: white;
+            background: linear-gradient(90deg, #102e20dd, #102e2044),
+            url('https://images.unsplash.com/photo-1470770841072-f978cf4d019e?w=1600') center/cover;
+        }
+        .hero-content { max-width: 700px; animation: appear 1.2s ease; }
+        .hero h1 { font-size: clamp(40px, 6vw, 68px); margin-bottom: 22px; }
+        .hero p { font-size: 19px; line-height: 1.7; margin-bottom: 30px; }
+        .btn {
+            display: inline-block; padding: 15px 28px;
+            background: #65bd79; color: white; text-decoration: none;
+            border-radius: 30px; font-weight: bold;
+        }
+        .btn:hover, .btn:focus-visible { background: #247747; }
+        .section { padding: 75px 9%; }
+        .section h2 { font-size: 34px; margin-bottom: 18px; }
+        .section > p { line-height: 1.7; max-width: 780px; }
+        .cards { display: grid; grid-template-columns: repeat(auto-fit,minmax(220px,1fr)); gap: 22px; margin-top: 30px; }
+        .card { background: white; padding: 28px; border-radius: 8px; box-shadow: 0 5px 20px #183b2a12; }
+        .card h3 { color: #247747; margin-bottom: 12px; }
+        .card p { line-height: 1.6; color: #64736a; }
+        footer { background: #183b2a; color: white; text-align: center; padding: 30px; }
+        @keyframes appear { from { opacity: 0; transform: translateY(30px); } to { opacity: 1; transform: translateY(0); } }
+        @media (prefers-reduced-motion: reduce) {
+            *, *::before, *::after { animation-duration: 0.01ms !important; scroll-behavior: auto !important; }
+        }
+        @media(max-width:650px) {
+            header { flex-direction: column; gap: 18px; }
+            nav { display: flex; flex-wrap: wrap; justify-content: center; gap: 12px; }
+            nav a { margin: 0; font-size: 13px; }
+            .hero { min-height: 520px; padding: 56px 8%; }
+            .section { padding: 56px 8%; }
+            .section h2 { font-size: 29px; }
+        }
+    </style>
+</head>
+<body>
+<header>
+    <div class="logo">🌿 ECO SEMEY</div>
+    <nav aria-label="Основная навигация">
+        <a href="#about">О проекте</a>
+        <a href="#problems">Проблемы</a>
+        <a href="#solutions">Решения</a>
+    </nav>
+</header>
+
+<main>
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Экология города Семей</h1>
+            <p>Чистая окружающая среда — наше общее будущее.
+            Изучаем экологические проблемы родного города
+            и ищем пути их решения.</p>
+            <a href="#problems" class="btn">Исследовать проблемы →</a>
+        </div>
+    </section>
+
+    <section class="section" id="about">
+        <h2>Наш город — наша ответственность</h2>
+        <p>Экологическое состояние Семей зависит от бережного отношения
+        к природе, водным ресурсам, воздуху и городским территориям.</p>
+    </section>
+
+    <section class="section" id="problems">
+        <h2>Экологические направления</h2>
+        <div class="cards">
+            <article class="card">
+                <h3>🌫️ Качество воздуха</h3>
+                <p>Изучение источников загрязнения атмосферы и способов уменьшения выбросов.</p>
+            </article>
+            <article class="card">
+                <h3>💧 Река Иртыш</h3>
+                <p>Охрана водных ресурсов и предотвращение загрязнения реки.</p>
+            </article>
+            <article class="card">
+                <h3>♻️ Отходы</h3>
+                <p>Раздельный сбор мусора, переработка и сокращение отходов.</p>
+            </article>
+            <article class="card">
+                <h3>🌳 Зелёные зоны</h3>
+                <p>Сохранение парков, деревьев и развитие городского озеленения.</p>
+            </article>
+        </div>
+    </section>
+
+    <section class="section" id="solutions">
+        <h2>Начни с малого</h2>
+        <p>Не оставляй мусор, экономь воду, сортируй отходы и береги деревья.
+        Каждый шаг имеет значение.</p>
+    </section>
+</main>
+
+<footer>© 2026 ECO SEMEY | Экология начинается с нас 🌱</footer>
+</body>
+</html>
