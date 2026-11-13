@@ -1,0 +1,152 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eco Semey — Экология города</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f3f7f1;
+            color: #243b2b;
+        }
+
+        header {
+            background: #174d35;
+            color: white;
+            padding: 25px 8%;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav h2 {
+            margin: 0;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 20px;
+        }
+
+        .hero {
+            padding: 100px 8%;
+            background: #dcebdc;
+        }
+
+        .hero h1 {
+            font-size: 48px;
+            max-width: 650px;
+        }
+
+        .hero p {
+            font-size: 20px;
+            max-width: 600px;
+            line-height: 1.6;
+        }
+
+        .button {
+            display: inline-block;
+            background: #23734b;
+            color: white;
+            padding: 15px 25px;
+            border-radius: 8px;
+            text-decoration: none;
+            margin-top: 15px;
+        }
+
+        .content {
+            padding: 50px 8%;
+        }
+
+        .cards {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .card {
+            background: white;
+            padding: 25px;
+            border-radius: 12px;
+            flex: 1;
+            min-width: 200px;
+        }
+
+        footer {
+            background: #174d35;
+            color: white;
+            padding: 25px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <nav>
+        <h2>🌿 ECO SEMEY</h2>
+
+        <div>
+            <a href="#about">О проекте</a>
+            <a href="#problems">Проблемы</a>
+            <a href="#contact">Контакты</a>
+        </div>
+    </nav>
+</header>
+
+<section class="hero">
+    <h1>Экология нашего города начинается с нас</h1>
+
+    <p>
+        Изучаем экологические проблемы города Семей,
+        их причины, последствия и способы решения.
+    </p>
+
+    <a href="#problems" class="button">Узнать больше</a>
+</section>
+
+<section class="content" id="about">
+    <h2>О проекте</h2>
+
+    <p>
+        ECO SEMEY — информационный проект,
+        посвящённый экологическому состоянию города Семей.
+    </p>
+</section>
+
+<section class="content" id="problems">
+    <h2>Экологические направления</h2>
+
+    <div class="cards">
+        <div class="card">
+            <h3>🌫️ Загрязнение воздуха</h3>
+            <p>Изучение качества атмосферного воздуха.</p>
+        </div>
+
+        <div class="card">
+            <h3>💧 Водные ресурсы</h3>
+            <p>Защита рек и водоёмов региона.</p>
+        </div>
+
+        <div class="card">
+            <h3>🌳 Зелёные зоны</h3>
+            <p>Сохранение природы и озеленение города.</p>
+        </div>
+    </div>
+</section>
+
+<footer id="contact">
+    ECO SEMEY © 2026
+</footer>
+
+</body>
+</html>
