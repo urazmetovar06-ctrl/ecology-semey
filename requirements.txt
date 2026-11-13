@@ -1,3 +1,9 @@
+<<<<<<< HEAD
 
 Django==6.1.2
 gunicorn
+=======
+
+Django==6.1.2
+gunicorn
+>>>>>>> d0ad7e75ca28850c020e627c3ecb1d8a93354505

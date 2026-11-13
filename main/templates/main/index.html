@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="ru">
 <head>
@@ -112,3 +113,1234 @@
 <footer>© 2026 ECO SEMEY | Экология начинается с нас 🌱</footer>
 </body>
 </html>
+=======
+
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ECO SEMEY — Экология города</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+
+<style>
+:root {
+    --green: #173e30;
+    --light-green: #dce9dc;
+    --cream: #f7f7f0;
+    --orange: #d88a54;
+    --text: #25372d;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'DM Sans', sans-serif;
+    background: var(--cream);
+    color: var(--text);
+}
+
+header {
+    min-height: 82px;
+    padding: 18px 7%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    background: rgba(247,247,240,.97);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    border-bottom: 1px solid #e4e7df;
+}
+
+.logo {
+    font-size: 23px;
+    font-weight: 800;
+    color: var(--green);
+    white-space: nowrap;
+}
+
+.logo span {
+    color: var(--orange);
+}
+
+nav {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--text);
+    font-size: 13px;
+    font-weight: 600;
+}
+
+nav a:hover {
+    color: var(--orange);
+}
+
+.hero {
+    min-height: 610px;
+    padding: 100px 8%;
+    display: flex;
+    align-items: center;
+    color: white;
+    background:
+    linear-gradient(90deg, rgba(13,42,30,.94), rgba(13,42,30,.3)),
+    url('https://rus.baq.kz/storage/cache_resize/news/2024/04/30/UJK4qRWLWU3s6wjwnS7qFpjC8JFUegyajXUTZgix.jpg_width=1200Xheight=700Xtype=1.jpg')
+    center/cover;
+}
+
+.hero-content {
+    max-width: 750px;
+    animation: appear 1s ease;
+}
+
+.tag {
+    display: inline-block;
+    padding: 9px 16px;
+    border: 1px solid rgba(255,255,255,.5);
+    border-radius: 30px;
+    font-size: 12px;
+    letter-spacing: 2px;
+    margin-bottom: 25px;
+}
+
+.hero h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(42px, 6vw, 76px);
+    line-height: 1.12;
+    margin-bottom: 25px;
+}
+
+.hero p {
+    max-width: 550px;
+    line-height: 1.8;
+    color: #e2ebe2;
+    font-size: 17px;
+}
+
+.button {
+    display: inline-block;
+    margin-top: 25px;
+    background: var(--orange);
+    color: white;
+    padding: 15px 25px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 700;
+    border: none;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.button:hover {
+    background: #bd7040;
+    transform: translateY(-3px);
+}
+
+section {
+    padding: 85px 8%;
+    scroll-margin-top: 90px;
+}
+
+.section-label {
+    color: #9b754e;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: 12px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.section-title {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(32px, 4vw, 48px);
+    color: var(--green);
+    margin-bottom: 20px;
+}
+
+.intro {
+    max-width: 800px;
+    line-height: 1.9;
+    color: #68766b;
+    font-size: 16px;
+}
+
+.stats {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-top: 40px;
+}
+
+.stat {
+    padding: 30px;
+    background: white;
+    border-radius: 10px;
+    border: 1px solid #e8e9df;
+}
+
+.stat h3 {
+    color: var(--green);
+    font-size: 35px;
+    margin-bottom: 10px;
+}
+
+.stat p {
+    color: #778178;
+    font-size: 14px;
+}
+
+.problems {
+    background: #eaf0e7;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    margin-top: 40px;
+}
+
+.card {
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: .35s;
+}
+
+.card:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 15px 35px rgba(24,60,42,.12);
+}
+
+.card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+.card-content {
+    padding: 25px;
+}
+
+.card h3 {
+    color: var(--green);
+    font-size: 21px;
+    margin-bottom: 12px;
+}
+
+.card p {
+    color: #778178;
+    line-height: 1.7;
+    font-size: 14px;
+}
+
+.read-more {
+    display: inline-block;
+    margin-top: 18px;
+    color: #b77648;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.irtysh {
+    background: var(--green);
+    color: white;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    align-items: center;
+}
+
+.irtysh img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.irtysh .section-title {
+    color: white;
+}
+
+.irtysh p {
+    color: #d0ded3;
+    line-height: 1.9;
+}
+
+/* Ответственные организации */
+
+.responsibility {
+    background: #f7f7f0;
+}
+
+.authority-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 22px;
+    margin-top: 40px;
+}
+
+.authority-card {
+    background: white;
+    padding: 28px;
+    border-radius: 12px;
+    border: 1px solid #e4e7df;
+    transition: .3s;
+}
+
+.authority-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 25px rgba(24,60,42,.1);
+}
+
+.authority-card h3 {
+    color: var(--green);
+    margin-bottom: 12px;
+    font-size: 20px;
+}
+
+.authority-card p {
+    color: #68766b;
+    line-height: 1.8;
+    font-size: 14px;
+}
+
+.authority-card a {
+    display: inline-block;
+    margin-top: 15px;
+    color: #b77648;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+/* Дополнительные информационные блоки */
+
+.info-section {
+    background: #eaf0e7;
+}
+
+.info-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 22px;
+    margin-top: 35px;
+}
+
+.info-box {
+    background: white;
+    border-radius: 12px;
+    padding: 28px;
+    border-left: 4px solid var(--orange);
+}
+
+.info-box h3 {
+    color: var(--green);
+    margin-bottom: 12px;
+    font-size: 20px;
+}
+
+.info-box p,
+.info-box li {
+    color: #68766b;
+    line-height: 1.8;
+    font-size: 14px;
+}
+
+.info-box ul {
+    padding-left: 20px;
+    margin-top: 10px;
+}
+
+.law-list {
+    display: grid;
+    gap: 15px;
+    margin-top: 30px;
+}
+
+.law-item {
+    background: white;
+    padding: 23px 25px;
+    border-radius: 9px;
+    border: 1px solid #e4e7df;
+}
+
+.law-item h3 {
+    color: var(--green);
+    margin-bottom: 8px;
+}
+
+.law-item p {
+    color: #68766b;
+    line-height: 1.7;
+    font-size: 14px;
+}
+
+.law-item a {
+    display: inline-block;
+    margin-top: 12px;
+    color: #b77648;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+/* Как сообщить о проблеме */
+
+.report {
+    background: var(--green);
+    color: white;
+}
+
+.report .section-title {
+    color: white;
+}
+
+.report .intro {
+    color: #d0ded3;
+}
+
+.report-steps {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-top: 35px;
+}
+
+.report-step {
+    padding: 25px;
+    border: 1px solid rgba(255,255,255,.2);
+    border-radius: 10px;
+    background: rgba(255,255,255,.06);
+}
+
+.report-step h3 {
+    color: #f0b17f;
+    margin-bottom: 12px;
+}
+
+.report-step p {
+    color: #d0ded3;
+    line-height: 1.7;
+    font-size: 14px;
+}
+
+.report .button {
+    background: var(--orange);
+}
+
+/* Новости */
+
+.news {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+    margin-top: 35px;
+}
+
+.news-item {
+    padding: 30px;
+    background: white;
+    border-radius: 10px;
+    border-left: 4px solid var(--orange);
+}
+
+.news-item small {
+    color: #9b754e;
+}
+
+.news-item h3 {
+    margin: 15px 0;
+    color: var(--green);
+}
+
+.news-item p {
+    color: #778178;
+    line-height: 1.7;
+}
+
+/* Тест */
+
+.quiz {
+    background: #eaf0e7;
+}
+
+.quiz-container {
+    max-width: 850px;
+    margin-top: 35px;
+    background: white;
+    border-radius: 14px;
+    padding: 30px;
+    box-shadow: 0 8px 25px rgba(24,60,42,.06);
+}
+
+.question {
+    padding: 22px 0;
+    border-bottom: 1px solid #e8e9df;
+}
+
+.question h3 {
+    color: var(--green);
+    font-size: 17px;
+    margin-bottom: 15px;
+}
+
+.question label {
+    display: block;
+    padding: 9px 12px;
+    margin: 7px 0;
+    border-radius: 6px;
+    background: #f7f7f0;
+    cursor: pointer;
+    color: #536358;
+    font-size: 14px;
+}
+
+.question label:hover {
+    background: #eaf0e7;
+}
+
+.question input {
+    width: auto;
+    margin-right: 9px;
+}
+
+#quiz-result {
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--green);
+    line-height: 1.7;
+}
+
+/* Контакты */
+
+.contact {
+    background: #f7f7f0;
+    text-align: center;
+}
+
+.contact form {
+    max-width: 550px;
+    margin: 30px auto 0;
+    display: grid;
+    gap: 15px;
+}
+
+input, textarea {
+    padding: 16px;
+    border: 1px solid #d7dfd5;
+    border-radius: 6px;
+    font: inherit;
+    width: 100%;
+}
+
+textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+form button {
+    border: none;
+    cursor: pointer;
+    font: inherit;
+}
+
+footer {
+    padding: 35px 8%;
+    background: #102e22;
+    color: #d1dfd3;
+    text-align: center;
+    font-size: 13px;
+    line-height: 1.8;
+}
+
+footer strong {
+    color: white;
+}
+
+@keyframes appear {
+    from {opacity: 0; transform: translateY(25px);}
+    to {opacity: 1; transform: translateY(0);}
+}
+
+@media(max-width: 800px) {
+    header {
+        height: auto;
+        padding: 20px 5%;
+        flex-wrap: wrap;
+    }
+
+    nav {
+        gap: 13px;
+    }
+
+    nav a {
+        font-size: 12px;
+    }
+
+    .hero {
+        min-height: 520px;
+        padding: 75px 6%;
+    }
+
+    section {
+        padding: 65px 6%;
+    }
+
+    .stats, .cards,
+    .authority-grid, .info-grid,
+    .report-steps, .news {
+        grid-template-columns: 1fr;
+    }
+
+    .irtysh {
+        grid-template-columns: 1fr;
+    }
+
+    .quiz-container {
+        padding: 20px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <div class="logo">ECO <span>SEMEY.</span></div>
+
+    <nav>
+        <a href="#about">О проекте</a>
+        <a href="#problems">Проблемы</a>
+        <a href="#responsibility">Кто отвечает</a>
+        <a href="#irtysh">Иртыш</a>
+        <a href="#laws">Законы</a>
+        <a href="#quiz">Тест</a>
+    </nav>
+</header>
+
+<!-- ГЛАВНЫЙ ЭКРАН -->
+
+<div class="hero">
+    <div class="hero-content">
+        <div class="tag">ЭКОЛОГИЯ • ГОРОД СЕМЕЙ</div>
+
+        <h1>Будущее начинается с чистой природы</h1>
+
+        <p>
+            Экологический портал города Семей.
+            Изучаем состояние окружающей среды,
+            рассказываем о проблемах и ищем пути их решения.
+        </p>
+
+        <a href="#about" class="button">Исследовать проект →</a>
+    </div>
+</div>
+
+<!-- О ПРОЕКТЕ -->
+
+<section id="about">
+    <div class="section-label">О НАШЕМ ПРОЕКТЕ</div>
+    <h2 class="section-title">Экология — ответственность каждого</h2>
+
+    <p class="intro">
+        ECO SEMEY — информационный проект, посвящённый
+        экологическому состоянию города Семей и области Абай.
+        Наша задача — сделать экологическую информацию
+        доступной, понятной и полезной для каждого жителя.
+        Проект знакомит с экологическими проблемами региона,
+        природными ресурсами, природоохранными организациями
+        и способами участия населения в защите окружающей среды.
+    </p>
+
+    <div class="stats">
+        <div class="stat">
+            <h3>01</h3>
+            <p>Экологический мониторинг</p>
+        </div>
+
+        <div class="stat">
+            <h3>02</h3>
+            <p>Изучение природных ресурсов</p>
+        </div>
+
+        <div class="stat">
+            <h3>03</h3>
+            <p>Экологическое просвещение</p>
+        </div>
+    </div>
+</section>
+
+<!-- ПРОБЛЕМЫ -->
+
+<section class="problems" id="problems">
+    <div class="section-label">ЭКОЛОГИЧЕСКАЯ СИТУАЦИЯ</div>
+    <h2 class="section-title">С какими проблемами мы сталкиваемся?</h2>
+
+    <p class="intro">
+        Экологическая безопасность города зависит от состояния
+        атмосферного воздуха, водных ресурсов, почв и обращения
+        с отходами. Эти направления требуют постоянного внимания,
+        мониторинга и совместной работы государства и жителей.
+    </p>
+
+    <div class="cards">
+
+        <div class="card">
+            <img src="https://img.inform.kz/kazinform-photobank/media/2024-07-12/a8a3d249-fff1-4629-91b4-576b5a55d4c7.jpeg" alt="Лес и природа">
+            <div class="card-content">
+                <h3>Зелёные территории</h3>
+                <p>
+                    Сохранение лесов, городских парков, озеленение
+                    и защита природных экосистем. Деревья помогают
+                    улучшать микроклимат и поддерживать биоразнообразие.
+                </p>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://avatars.mds.yandex.net/i?id=b42578a9c9722cad29da2a68fd282c84_l-6281374-images-thumbs&n=13" alt="Чистая энергия">
+            <div class="card-content">
+                <h3>Качество воздуха</h3>
+                <p>
+                    На качество атмосферного воздуха могут влиять
+                    выбросы предприятий, автомобильный транспорт,
+                    отопление и пыль. Необходимы наблюдения
+                    и контроль источников загрязнения.
+                </p>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://avatars.mds.yandex.net/i?id=9edae7b9ec9449d2acb737d64ef3b099_l-5239380-images-thumbs&n=13" alt="Водные ресурсы">
+            <div class="card-content">
+                <h3>Водные ресурсы</h3>
+                <p>
+                    Защита рек и водоёмов, предотвращение загрязнения,
+                    контроль качества воды и рациональное
+                    использование водных ресурсов.
+                </p>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- КТО ОТВЕЧАЕТ ЗА ЭКОЛОГИЮ -->
+
+<section class="responsibility" id="responsibility">
+
+    <div class="section-label">ЭКОЛОГИЧЕСКОЕ УПРАВЛЕНИЕ</div>
+
+    <h2 class="section-title">Кто отвечает за экологию Семея?</h2>
+
+    <p class="intro">
+        Охрана окружающей среды — общая задача государственных
+        органов, предприятий и жителей города. Каждая организация
+        выполняет свои функции в рамках законодательства Казахстана.
+    </p>
+
+    <div class="authority-grid">
+
+        <div class="authority-card">
+            <h3>Министерство экологии и природных ресурсов РК</h3>
+            <p>
+                Формирует государственную политику в сфере охраны
+                окружающей среды, определяет основные направления
+                природоохранной деятельности и координирует работу
+                профильных государственных органов.
+            </p>
+            <a href="https://www.gov.kz/" target="_blank">
+                Государственный портал →
+            </a>
+        </div>
+
+        <div class="authority-card">
+            <h3>Департамент экологии по области Абай</h3>
+            <p>
+                Территориальный орган экологического регулирования
+                и контроля. Осуществляет государственный экологический
+                контроль, проверяет соблюдение природоохранных требований
+                и рассматривает вопросы в пределах своей компетенции.
+            </p>
+            <a href="https://www.gov.kz/" target="_blank">
+                Государственный портал →
+            </a>
+        </div>
+
+        <div class="authority-card">
+            <h3>Управление природных ресурсов области Абай</h3>
+            <p>
+                Участвует в формировании и реализации природоохранной
+                политики региона, занимается вопросами устойчивого
+                использования природных ресурсов, сохранения лесов
+                и биологического разнообразия.
+                Адрес: г. Семей, ул. Турлыханова, 30.
+                Телефон: 8 (7222) 35-45-35.
+            </p>
+            <a href="https://www.gov.kz/memleket/entities/abay-tabigat?lang=ru"
+               target="_blank">Официальный сайт управления →</a>
+        </div>
+
+        <div class="authority-card">
+            <h3>Акимат города Семей</h3>
+            <p>
+                Решает вопросы местного управления, благоустройства
+                территории, городского хозяйства, озеленения
+                и организации коммунальной инфраструктуры
+                в пределах предоставленных полномочий.
+            </p>
+            <a href="https://www.gov.kz/" target="_blank">
+                Государственный портал →
+            </a>
+        </div>
+
+        <div class="authority-card">
+            <h3>Санитарно-эпидемиологический контроль области Абай</h3>
+            <p>
+                Контролирует соблюдение санитарных требований,
+                направленных на обеспечение санитарно-эпидемиологического
+                благополучия населения и защиту общественного здоровья.
+            </p>
+            <a href="https://www.gov.kz/org/dsek-abay?lang=ru"
+               target="_blank">Официальный сайт →</a>
+        </div>
+
+        <div class="authority-card">
+            <h3>Жители и общественные организации</h3>
+            <p>
+                Участвуют в общественных слушаниях, сообщают
+                о замеченных нарушениях, поддерживают раздельный
+                сбор отходов, участвуют в уборках и экологических
+                мероприятиях.
+            </p>
+            <a href="https://eotinish.kz/" target="_blank">
+                Подать обращение →
+            </a>
+        </div>
+
+    </div>
+</section>
+
+<!-- ИРТЫШ -->
+
+<section class="irtysh" id="irtysh">
+    <div>
+        <div class="section-label">ПРИРОДНОЕ НАСЛЕДИЕ</div>
+        <h2 class="section-title">Иртыш — сердце нашего региона</h2>
+
+        <p>
+            Река Иртыш имеет важное значение для природы,
+            населения и хозяйственной деятельности региона.
+            Она является частью крупной речной системы Казахстана.
+            Сохранение качества воды, прибрежных территорий
+            и речных экосистем — важная экологическая задача.
+            Загрязнение водоёмов может негативно влиять на водные
+            организмы, растения и здоровье людей.
+        </p>
+
+        <a href="#report" class="button">Как сообщить о проблеме →</a>
+    </div>
+
+    <img src="https://semeytany.kz/wp-content/uploads/2023/06/i.jpg" alt="Река и природа">
+</section>
+
+<!-- ЭКОЛОГИЧЕСКИЕ ОСОБЕННОСТИ РЕГИОНА -->
+
+<section class="info-section" id="region">
+    <div class="section-label">ОБЛАСТЬ АБАЙ</div>
+    <h2 class="section-title">Экологические особенности региона</h2>
+
+    <p class="intro">
+        Семей и область Абай обладают уникальным природным
+        и историческим наследием. При изучении экологической
+        безопасности региона важно учитывать не только текущие
+        проблемы города, но и последствия хозяйственной деятельности
+        и исторических событий.
+    </p>
+
+    <div class="info-grid">
+
+        <div class="info-box">
+            <h3>Семипалатинский испытательный полигон</h3>
+            <p>
+                В XX веке на территории Семипалатинского испытательного
+                полигона проводились ядерные испытания. Эта деятельность
+                оставила серьёзное экологическое и социальное наследие.
+                Вопросы радиационной безопасности, исследования
+                загрязнённых территорий и наблюдение за состоянием
+                окружающей среды имеют большое значение для региона.
+            </p>
+        </div>
+
+        <div class="info-box">
+            <h3>Обращение с отходами</h3>
+            <p>
+                Неправильное размещение бытовых и промышленных отходов
+                может приводить к загрязнению почвы, воды и воздуха.
+                Для снижения воздействия необходимы организованный
+                сбор мусора, сортировка, переработка и контроль
+                мест размещения отходов.
+            </p>
+        </div>
+
+        <div class="info-box">
+            <h3>Сохранение почв</h3>
+            <p>
+                Почвы являются важной частью природной среды.
+                На их состояние могут влиять отходы, промышленные
+                загрязнители, эрозия и нерациональное использование
+                земель. Необходимы наблюдения и меры по защите
+                земельных ресурсов.
+            </p>
+        </div>
+
+        <div class="info-box">
+            <h3>Охрана животного и растительного мира</h3>
+            <p>
+                Сохранение природных местообитаний, лесных участков,
+                степных экосистем и редких видов помогает поддерживать
+                экологическое равновесие региона. Важны охрана
+                природных территорий и ответственное поведение людей.
+            </p>
+        </div>
+
+    </div>
+</section>
+
+<!-- ЭКОЛОГИЧЕСКИЕ ЗАКОНЫ -->
+
+<section id="laws">
+    <div class="section-label">ЗАКОНОДАТЕЛЬСТВО</div>
+    <h2 class="section-title">Экологические законы Казахстана</h2>
+
+    <p class="intro">
+        Экологическое законодательство устанавливает правила
+        охраны окружающей среды, использования природных ресурсов,
+        экологического контроля и ответственности за нарушения.
+    </p>
+
+    <div class="law-list">
+
+        <div class="law-item">
+            <h3>Экологический кодекс Республики Казахстан</h3>
+            <p>
+                Кодекс регулирует отношения в сфере охраны окружающей
+                среды, экологического регулирования, оценки воздействия
+                на окружающую среду, экологического контроля
+                и использования природных ресурсов.
+            </p>
+            <a href="https://adilet.zan.kz/rus/docs/K2100000400"
+               target="_blank">Читать кодекс на Әділет →</a>
+        </div>
+
+        <div class="law-item">
+            <h3>Принцип ответственности за загрязнение</h3>
+            <p>
+                Природопользователи должны соблюдать установленные
+                экологические требования и выполнять предусмотренные
+                законодательством меры по предотвращению и снижению
+                негативного воздействия на окружающую среду.
+            </p>
+        </div>
+
+        <div class="law-item">
+            <h3>Экологическая оценка и общественные слушания</h3>
+            <p>
+                Для предусмотренных законодательством видов деятельности
+                проводится экологическая оценка. Общественные слушания
+                позволяют населению знакомиться с проектами и направлять
+                замечания и предложения.
+            </p>
+        </div>
+
+    </div>
+</section>
+
+<!-- КАК СООБЩИТЬ О ПРОБЛЕМЕ -->
+
+<section class="report" id="report">
+    <div class="section-label">УЧАСТИЕ ЖИТЕЛЕЙ</div>
+    <h2 class="section-title">Заметили экологическое нарушение?</h2>
+
+    <p class="intro">
+        Жители могут сообщать о проблемах окружающей среды
+        в уполномоченные государственные органы.
+        Чем точнее информация, тем проще рассмотреть обращение.
+    </p>
+
+    <div class="report-steps">
+
+        <div class="report-step">
+            <h3>01. Зафиксируйте проблему</h3>
+            <p>
+                Укажите место, дату и время. Если это безопасно,
+                сделайте фотографии или видео. Не подвергайте
+                себя опасности ради съёмки.
+            </p>
+        </div>
+
+        <div class="report-step">
+            <h3>02. Подготовьте обращение</h3>
+            <p>
+                Опишите, что произошло, где обнаружено нарушение,
+                как долго оно продолжается и какие последствия
+                вы наблюдаете.
+            </p>
+        </div>
+
+        <div class="report-step">
+            <h3>03. Направьте обращение</h3>
+            <p>
+                Используйте официальный сервис e-Otinish,
+                чтобы направить обращение в государственный орган
+                и отслеживать его рассмотрение.
+            </p>
+        </div>
+
+    </div>
+
+    <a class="button" href="https://eotinish.kz/" target="_blank">
+        Перейти в e-Otinish →
+    </a>
+</section>
+
+<!-- ИНФОРМАЦИОННЫЙ РАЗДЕЛ -->
+
+<section id="news">
+    <div class="section-label">ИНФОРМАЦИОННЫЙ РАЗДЕЛ</div>
+    <h2 class="section-title">Экология и общество</h2>
+
+    <div class="news">
+
+        <div class="news-item">
+            <small>ЭКОЛОГИЧЕСКОЕ ПРОСВЕЩЕНИЕ</small>
+            <h3>Почему важно сортировать отходы?</h3>
+            <p>
+                Раздельный сбор помогает направлять пригодные
+                материалы на переработку, уменьшать количество
+                отходов, отправляемых на полигоны, и экономить
+                природные ресурсы.
+            </p>
+        </div>
+
+        <div class="news-item">
+            <small>ЗАЩИТА ПРИРОДЫ</small>
+            <h3>Зачем городу нужны зелёные зоны?</h3>
+            <p>
+                Парки и деревья улучшают городскую среду,
+                создают места отдыха, помогают поддерживать
+                биоразнообразие и формируют более комфортный
+                микроклимат.
+            </p>
+        </div>
+
+        <div class="news-item">
+            <small>ЭКОЛОГИЧЕСКАЯ КУЛЬТУРА</small>
+            <h3>Как экономить воду?</h3>
+            <p>
+                Закрывайте кран, когда вода не нужна,
+                своевременно устраняйте протечки и используйте
+                воду рационально. Даже небольшие привычки
+                помогают беречь водные ресурсы.
+            </p>
+        </div>
+
+        <div class="news-item">
+            <small>ЧИСТЫЙ ГОРОД</small>
+            <h3>Почему нельзя оставлять мусор на природе?</h3>
+            <p>
+                Отходы могут загрязнять почву и воду, причинять
+                вред животным и ухудшать состояние природных
+                территорий. Мусор необходимо выбрасывать
+                в предназначенные для этого места.
+            </p>
+        </div>
+
+    </div>
+</section>
+
+<!-- ТЕСТ -->
+
+<section class="quiz" id="quiz">
+    <div class="section-label">ПРОВЕРЬ СЕБЯ</div>
+    <h2 class="section-title">Тест на экологические знания</h2>
+
+    <p class="intro">
+        Проверь, насколько хорошо ты знаешь экологию,
+        природные ресурсы и правила охраны окружающей среды.
+        Выбери один правильный ответ в каждом вопросе.
+    </p>
+
+    <div class="quiz-container">
+
+        <form id="ecology-quiz">
+
+            <div class="question">
+                <h3>1. Какая река протекает через город Семей?</h3>
+                <label><input type="radio" name="q1" value="0"> Есиль</label>
+                <label><input type="radio" name="q1" value="1"> Иртыш</label>
+                <label><input type="radio" name="q1" value="0"> Или</label>
+            </div>
+
+            <div class="question">
+                <h3>2. Какой документ является основным экологическим кодексом Казахстана?</h3>
+                <label><input type="radio" name="q2" value="1"> Экологический кодекс РК</label>
+                <label><input type="radio" name="q2" value="0"> Трудовой кодекс РК</label>
+                <label><input type="radio" name="q2" value="0"> Уголовно-процессуальный кодекс РК</label>
+            </div>
+
+            <div class="question">
+                <h3>3. Что помогает уменьшить количество отходов?</h3>
+                <label><input type="radio" name="q3" value="0"> Сжигание мусора во дворе</label>
+                <label><input type="radio" name="q3" value="1"> Сортировка и переработка</label>
+                <label><input type="radio" name="q3" value="0"> Выбрасывание мусора в реку</label>
+            </div>
+
+            <div class="question">
+                <h3>4. Какой орган осуществляет государственный экологический контроль?</h3>
+                <label><input type="radio" name="q4" value="1"> Департамент экологии</label>
+                <label><input type="radio" name="q4" value="0"> Библиотека</label>
+                <label><input type="radio" name="q4" value="0"> Спортивная школа</label>
+            </div>
+
+            <div class="question">
+                <h3>5. Для чего нужны зелёные насаждения в городе?</h3>
+                <label><input type="radio" name="q5" value="0"> Только для украшения улиц</label>
+                <label><input type="radio" name="q5" value="1"> Для улучшения городской среды и сохранения природы</label>
+                <label><input type="radio" name="q5" value="0"> Для увеличения количества отходов</label>
+            </div>
+
+            <div class="question">
+                <h3>6. Как можно направить официальное обращение в государственный орган?</h3>
+                <label><input type="radio" name="q6" value="1"> Через e-Otinish</label>
+                <label><input type="radio" name="q6" value="0"> Через случайный игровой сайт</label>
+                <label><input type="radio" name="q6" value="0"> Никак нельзя</label>
+            </div>
+
+            <div class="question">
+                <h3>7. Что может загрязнять атмосферный воздух?</h3>
+                <label><input type="radio" name="q7" value="0"> Только дождь</label>
+                <label><input type="radio" name="q7" value="1"> Выбросы предприятий и транспорта</label>
+                <label><input type="radio" name="q7" value="0"> Только снег</label>
+            </div>
+
+            <div class="question">
+                <h3>8. Где проводились ядерные испытания, оставившие экологическое наследие региона?</h3>
+                <label><input type="radio" name="q8" value="1"> На Семипалатинском испытательном полигоне</label>
+                <label><input type="radio" name="q8" value="0"> На побережье Каспийского моря</label>
+                <label><input type="radio" name="q8" value="0"> В центре Астаны</label>
+            </div>
+
+            <button type="button" class="button" onclick="checkQuiz()">
+                Проверить ответы →
+            </button>
+
+            <button type="reset" class="button" onclick="resetQuiz()"
+                    style="background:#68766b;">
+                Пройти заново
+            </button>
+
+        </form>
+
+        <div id="quiz-result"></div>
+
+    </div>
+</section>
+
+<!-- КОНТАКТЫ -->
+
+<section class="contact" id="contact">
+    <div class="section-label">ОБРАТНАЯ СВЯЗЬ</div>
+    <h2 class="section-title">Есть идея для нашего города?</h2>
+
+    <p class="intro" style="margin:auto">
+        Поделитесь предложением или экологической проблемой.
+        Форма пока демонстрационная и не отправляет сообщения
+        на сервер.
+    </p>
+
+    
+<form action="https://formsubmit.co/urazmetova.r06@gmail.com" method="POST">
+    <input type="text" name="name" placeholder="Ваше имя" required>
+
+    <input type="email" name="email" placeholder="Электронная почта" required>
+
+    <textarea name="message" placeholder="Ваше сообщение..." required></textarea>
+
+    <input type="hidden" name="_subject" value="Новое сообщение с сайта ECO SEMEY">
+
+    <button class="button" type="submit">Отправить сообщение →</button>
+</form>
+
+</section>
+
+<footer>
+    <strong>ECO SEMEY</strong>
+    <p>Экологический информационный портал города Семей</p>
+    <p>Информационный образовательный проект</p>
+    <p style="margin-top:12px">© 2026 ECO SEMEY. Все права защищены.</p>
+</footer>
+
+<script>
+function checkQuiz() {
+    const total = 8;
+    let score = 0;
+    let answered = 0;
+
+    for (let i = 1; i <= total; i++) {
+        const answer = document.querySelector(
+            'input[name="q' + i + '"]:checked'
+        );
+
+        if (answer) {
+            answered++;
+            score += Number(answer.value);
+        }
+    }
+
+    const result = document.getElementById("quiz-result");
+
+    if (answered < total) {
+        result.textContent =
+            "Ответь на все вопросы. Сейчас отвечено: " +
+            answered + " из " + total + ".";
+        return;
+    }
+
+    let message = "";
+
+    if (score === 8) {
+        message = "Отлично! Ты настоящий знаток экологии!";
+    } else if (score >= 6) {
+        message = "Очень хороший результат! Ты хорошо разбираешься в теме.";
+    } else if (score >= 4) {
+        message = "Неплохо! Но некоторые экологические темы стоит повторить.";
+    } else {
+        message = "Попробуй ещё раз и изучи информационные разделы сайта.";
+    }
+
+    result.textContent =
+        "Твой результат: " + score + " из " + total + ". " + message;
+}
+
+function resetQuiz() {
+    document.getElementById("quiz-result").textContent = "";
+}
+</script>
+</body>
+</html>
+>>>>>>> d0ad7e75ca28850c020e627c3ecb1d8a93354505
